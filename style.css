@@ -69,7 +69,7 @@ main {
 
 main h2 {
     font-size: 2.2rem;
-    color: #b30000;
+    color: rgba(179, 0, 0, 0.9);
     margin-top: 1.5em;
     margin-bottom: 0.8em;
     font-weight: 700;
