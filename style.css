@@ -132,11 +132,13 @@ ul {
     height: auto;
     border-radius: 12px;
     box-shadow: 0 6px 15px rgba(179,0,0,0.15);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0.8;
 }
 
 .clube img:hover {
     transform: scale(1.05);
+    opacity: 1;
 }
 
 .clube p {
