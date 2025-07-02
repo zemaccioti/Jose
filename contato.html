@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Jogo do Povo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Jogo do Povo</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="clubes.html">Clubes</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form>
+            <h2>Mande seu Passe para o Nosso Time!</h2>
+
+            <label for="nomesobrenome">Seu Nome de Craque</label>
+            <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+            <label for="email">Seu Email (para a súmula)</label>
+            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com.br">
+
+            <label for="telefone">Seu Telefone (para o banco de reservas)</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+
+            <label for="mensagem">Sua Mensagem para o Campo</label>
+            <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+            <fieldset class="conjunto">
+                <legend>Como Prefere o Nosso Contato para o Próximo Jogo?</legend>
+
+                <input type="radio" name="contato" value="email" id="radio-email"> Por Email<br>
+                
+                <input type="radio" name="contato" value="telefone" id="radio-telefone"> Por Telefone<br>
+                
+                <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> Por WhatsApp (o mais rápido!)<br>
+
+                <p class="certeza">Tem certeza que não prefere um contato mais direto pelo WhatsApp?</p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Qual o Melhor Horário para o Nosso Apito Inicial?</legend>
+                <select>
+                    <option>Manhã (antes do treino)</option>
+                    <option>Tarde (intervalo de jogo)</option>
+                    <option>Noite (depois da partida)</option>
+                </select>
+            </fieldset>
+            <br>
+            
+            <label class="checkbox"><input type="checkbox">Gostaria de receber o nosso "Boletim de Notícias" por email?</label>
+
+            <input type="submit" value="Enviar para o Gol!" class="enviar">
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Dias de Partida</td>
+                        <td>Horários de Atendimento</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>8h - 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h - 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h - 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Jogo do Povo. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,236 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #b30000;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    position: relative;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background-color: #cc0000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #e60000;
+    box-shadow: 0 4px 10px rgba(230, 0, 0, 0.7);
+}
+
+main {
+    padding: 30px 20px;
+    max-width: 900px;
+    margin: 40px auto 60px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(179, 0, 0, 0.15);
+}
+
+main h2 {
+    font-size: 2.2rem;
+    color: #b30000;
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+    font-weight: 700;
+    text-shadow: 0 1px 2px rgba(179,0,0,0.2);
+}
+
+main h3 {
+    font-size: 1.6rem;
+    color: #b30000;
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+    font-weight: 700;
+    text-shadow: 0 1px 2px rgba(179,0,0,0.2);
+}
+
+main p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+section {
+    margin-bottom: 35px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+section img {
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(179,0,0,0.1);
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    margin-left: 25px;
+    list-style-type: disc;
+    color: #444;
+    font-size: 1rem;
+}
+
+.clubes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 30px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.clube img {
+    width: 150px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(179,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.clube img:hover {
+    transform: scale(1.05);
+}
+
+.clube p {
+    margin-top: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #b30000;
+}
+
+.clube a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+footer {
+    background-color: #b30000;
+    color: white;
+    text-align: center;
+    padding: 18px 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.pagina-time {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.pagina-time h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #b30000;
+}
+
+.pagina-time h3 {
+    font-size: 1.6rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #444;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+.pagina-time p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.escudo-time {
+    display: block;
+    max-width: 150px;
+    height: auto;
+    margin: 20px auto 30px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.pagina-time ul {
+    font-size: 1rem;
+    margin-left: 25px;
+    list-style-type: disc;
+    color: #444;
+}
+
+.pagina-time ul li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .pagina-time {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .pagina-time h2 {
+        font-size: 1.8rem;
+    }
+
+    .pagina-time h3 {
+        font-size: 1.4rem;
+    }
+
+    .escudo-time {
+        max-width: 100px;
+    }
+}
